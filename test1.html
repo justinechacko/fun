@@ -1,0 +1,26 @@
+---
+layout: page
+title: test1
+permalink: /test1/
+---
+
+<textarea id="transliterate"></textarea>
+
+<script src="http://google.com/jsapi"></script>
+<script type="text/javascript">
+function transliterateLoad() {
+	var o = {
+		sourceLanguage: 'en', destinationLanguage: ['ml'],
+		shortcutKey: 'ctrl+g',
+		transliterationEnabled: true
+	};
+
+	var c = new google.elements.transliteration.TransliterationControl(o);
+	c.makeTransliteratable(['transliterate']);
+	
+	document.getElementById('transliterate').focus();
+} 
+$(document).ready(function() {
+	google.load("elements", "1", {packages: "transliteration", "callback": transliterateLoad});
+});
+</script> 
