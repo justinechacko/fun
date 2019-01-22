@@ -87,7 +87,7 @@ div.stretchy-wrapper{
 div.stretchy-wrapper > div {
     position: absolute;
     
-    top: -16.75%; bottom: 0; left: 0; right: 0;
+    top: 0; bottom: 0; left: 0; right: 0;
 }
 
 .playBtn {
@@ -101,3 +101,7 @@ div.stretchy-wrapper > div {
 
 }
 
+#transliterate {
+    width: 95%;
+    height: 250px;		
+}
